@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   
+    <color name="black"> #000000</color>
+    <color name="background">#A0A0A0</color>
+    <color name="listitem_default_color">#A0A0A0</color>
+    <color name="listitem_pressed_color">#FFCCCC</color>
+    <color name="red">#A00000</color>
+    <color name="listitem_focused_color">#000000</color>
+   
+</resources>

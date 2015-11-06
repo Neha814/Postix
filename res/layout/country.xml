@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="#000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Postix"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.3" 
+            android:background="@drawable/bg" >
+
+            <Button
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn2_2"
+                android:text="USA"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="84dp"
+                 android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn3_2"
+                android:hint="State.Province"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn3_2"
+                android:hint="City.Region"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#ffffff" />
+            
+            <Button
+                android:id="@+id/state_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="84dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn3_2"
+                android:text="State.Province"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/home"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/country"
+                android:layout_below="@+id/country"
+                android:layout_marginTop="36dp"
+                 android:background="@drawable/green"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="#000000" >
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn2_2"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+       
+    </LinearLayout>
+   <!-- *************************************************************** --> 
+     <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_grey"
+        android:visibility="gone"
+      
+        
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           android:background="@drawable/rounded_grey"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/done"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Done" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" 
+             android:choiceMode="singleChoice" 
+             android:smoothScrollbar="true"
+             android:background="#ffffff"
+             
+             android:dividerHeight="1dp"
+        android:listSelector="@android:color/darker_gray" >
+        </ListView>
+    </LinearLayout>
+<!-- ************************************************************** -->
+
+<LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_grey"
+        android:visibility="invisible"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_grey"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" >
+
+            <Button
+                android:id="@+id/cancel1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/done1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Done" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" 
+           	android:background="#ffffff"
+             android:choiceMode="singleChoice" 
+             android:smoothScrollbar="true"
+           
+             android:dividerHeight="1dp"
+        android:listSelector="@android:color/darker_gray" >
+        </ListView>
+    </LinearLayout>
+</FrameLayout>

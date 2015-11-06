@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="#000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Postix"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.3"
+            android:background="@drawable/bg" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                
+
+                <Button
+                    android:id="@+id/purple_button"
+                    android:layout_width="51dp"
+                    android:layout_height="28dp"
+                    
+                    android:background="@drawable/circle_purple" />
+
+                <Button
+                    android:id="@+id/red_button"
+                    android:layout_width="51dp"
+                    android:layout_height="28dp"
+                    
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/circle_red" />
+            </LinearLayout>
+            
+            
+            <!-- for keyword -->
+            
+            
+            <LinearLayout
+                android:id="@+id/keyword_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:orientation="horizontal" >
+
+                
+
+                <Button
+                    android:id="@+id/red_button_key"
+                    android:layout_width="51dp"
+                    android:layout_height="28dp"
+                    
+                    android:background="@drawable/circle_red" />
+
+                <Button
+                    android:id="@+id/green_button_key"
+                    android:layout_width="51dp"
+                    android:layout_height="28dp"
+                    
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/circle_green" />
+            </LinearLayout>
+          
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="157dp"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/btn3"
+                android:text="Search Now"
+                android:textColor="#ffffff" />
+            
+            <EditText
+                android:id="@+id/keyword"
+                android:layout_width="200dp"
+                android:layout_height="49dp"
+                android:layout_alignBaseline="@+id/categories"
+                android:layout_alignBottom="@+id/categories"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:visibility="invisible"
+                 android:background="@drawable/btn2"
+                 android:textColorHint="#FFFFFF"
+                android:hint="Keyword" />
+
+            <Button
+                android:id="@+id/categories"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="20dp"
+              
+                android:background="@drawable/btn1_1"
+                android:text="Categories"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/sub_categories"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/categories"
+                android:layout_alignBottom="@+id/categories"
+                android:layout_alignParentRight="true"
+               
+                android:background="@drawable/btn2"
+                android:text="Sub-categories"
+                android:layout_marginRight="15dp"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#000000" >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/new_search"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn3"
+                android:text="New Search"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/last_search"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/button6"
+                android:layout_weight="1"
+                android:background="@drawable/btn1_1"
+                android:text="Last Search"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_gravity="bottom"
+         android:background="@drawable/rounded_grey"
+        android:visibility="invisible"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_grey"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/done"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Done" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" 
+            android:choiceMode="singleChoice" 
+            android:smoothScrollbar="true"
+            android:background="#ffffff"
+       
+             android:dividerHeight="1dp"
+            
+         >
+        </ListView>
+    </LinearLayout>
+   /******************************************************************************/ 
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_gravity="bottom"
+         android:background="@drawable/rounded_grey"
+        
+         android:visibility="invisible"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:background="@drawable/rounded_grey"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" >
+
+            <Button
+                android:id="@+id/cancel1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/done1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#0099ff"
+                android:background="#e0e0e0"
+                android:text="Done" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" 
+           android:smoothScrollbar="true"
+           
+             android:dividerHeight="1dp"
+             android:background="#ffffff"
+             android:choiceMode="singleChoice" 
+        android:listSelector="@android:color/darker_gray" >
+        </ListView>
+    </LinearLayout>
+    
+    
+    /***********************************************************************/
+    
+
+</FrameLayout>

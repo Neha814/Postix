@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="60dp"
+
+    android:paddingRight="15dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Some presentations are filtered to block any content that users have designated would not be appropriate to view without legal consent and affirmative confirmation of responsibility and are considered &apos;private&apos; in nature." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:text="By clicking go you affirm the following facts: " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="1. You are of legal age to review restricted online material. 2. Your responsible for viewing or displaying &apos;filtered &apos; content. 3. You are aware and responsible for all liabilities per applicable laws and regulations. 4. You release The Worldwide Exchange, all it&apos;s assets, companies, products, employees, and affiliates from all liabilities that may occur based on your use of this site and the viewing and / or display of content there in and continue to be binded by all Postix terms &amp; conditions and all applicable laws." />
+
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+      
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2" >
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Cancel" 
+        android:textColor="#ffffff"
+            android:layout_marginLeft="35dp"
+         android:background="@drawable/bottom_btn2"
+        android:layout_weight="1"/>
+
+     <Button
+         android:id="@+id/go"
+         android:layout_width="80dp"
+         android:layout_height="40dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="35dp"
+         android:layout_weight="1"
+         android:background="@drawable/bottom_btn2"
+         android:text="Go"
+         android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

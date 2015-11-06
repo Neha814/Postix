@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Messages"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    <!-- ********************************************************************* -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/app_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+              android:focusable="true"
+            android:imeOptions="actionNext"
+            android:hint="First Name:"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:singleLine="true" 
+            android:selectAllOnFocus="true">
+
+            
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bdbdbd" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/app_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+              android:focusable="true"
+            android:hint="Last Name:"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:selectAllOnFocus="true" >
+
+           
+        </EditText>
+    </LinearLayout>
+
+    <!-- ********************************************************************* -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/app_email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+              android:focusable="true"
+            android:hint="Email:"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:singleLine="true" 
+            android:selectAllOnFocus="true">
+
+           
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bdbdbd" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/app_phone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+              android:focusable="true"
+            android:hint="Phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:selectAllOnFocus="true" >
+
+           
+        </EditText>
+    </LinearLayout>
+
+    <!-- ********************************************************************* -->
+
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/app_message"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+              android:focusable="true"
+            android:hint="Message"
+          
+           android:inputType="textMultiLine|textLongMessage|textNoSuggestions"
+           android:maxLines="15"
+            android:scrollHorizontally="true"
+           android:imeOptions="actionDone"
+            android:paddingLeft="7dp"
+            android:selectAllOnFocus="true" >
+
+           
+        </EditText>
+    </LinearLayout>
+
+    <!-- ********************************************************************* -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/app_cancel"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn3"
+             android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            
+            android:layout_marginLeft="15dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/app_send"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn3"
+            android:text="Send"
+           
+               android:layout_marginRight="15dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <!-- ********************************************************************* -->
+
+</LinearLayout>
+
+<!--   android:background="#D9000000" -->

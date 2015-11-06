@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Postix"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RR1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@drawable/bg" >
+
+            <!-- ***************************************** -->
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="386.67dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bigvideo_btn3"
+                android:gravity="center"
+               
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="386.67dp"
+                android:layout_height="135dp"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img_bg"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="386.67dp"
+                android:layout_height="135dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                
+                android:layout_marginTop="65dp"
+                android:background="#000000"
+                android:visibility="gone" >
+
+                <VideoView
+                    android:id="@+id/videoView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true" />
+
+                <Button
+                    android:id="@+id/close"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/cross" />
+            </RelativeLayout>
+
+            <!-- ***************************************** -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:id="@+id/L1"
+                android:weightSum="2" >
+                
+                <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/offer"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn1_1"
+                    android:text="Bid or Offer"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/appointment"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn2"
+                    android:text="Appointments"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+            
+                 <Button
+                    android:id="@+id/messages"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                	android:layout_marginTop="4dp"
+               		android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn3"
+                    android:layout_centerHorizontal="true"
+                    android:text="Messages"
+                    android:textColor="#ffffff" />
+            
+                </LinearLayout>
+            
+           
+
+            <Button
+                android:id="@+id/full_presentation"
+                android:layout_width="386.67dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/LL1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/video22" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#000000" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/new_search"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn3_2"
+                    android:text="New Search"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/last_search"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/button6"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn1_1"
+                    android:text="Last Search"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
